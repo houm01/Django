@@ -31,9 +31,3 @@ def dc_course(request):
 
 
 
-    # return render(request, 'README.html',{'network_python': '介绍',
-    #                                       'readme': 'readme_body',
-    #                                       'courses_list': courses_list,
-    #                                       'teacher_list': teacher_list,
-    #                                       'mytime': mytime},
-    #               )
