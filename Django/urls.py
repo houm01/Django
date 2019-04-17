@@ -15,11 +15,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from views import index,readme
+from views import index,readme,add_device
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',index.index), # 访问域名或ip时，返回此页面
     path('readme/',readme.readme),
+    path('sec',readme.sec_course),
+    path('dc',readme.dc_course),
+    path('add_device',add_device.add_device),
 ]

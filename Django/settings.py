@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'houm01_demo',
+    'pye'
 ]
 
 MIDDLEWARE = [
@@ -78,6 +80,12 @@ DATABASES = {
     'default': {
         # 'ENGINE': 'django.db.backends.sqlite3',
         # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'houm01db',
+        'USER': 'houm01dbuser',
+        'PASSWORD': 'packetdb@4096',
+        'HOST': '10.1.1.8',
+        'PORT': '5432',
     }
 }
 
